@@ -1,0 +1,16 @@
+@startuml
+
+skinparam usecase {
+
+BackgroundColor YellowGreen
+BorderColor  YellowGreen
+ArrowColor Olive
+
+}
+
+note  "Descripción\n \n Condición:\n{Historia sospechosa}\nPunto de extension:\nSolicitud hecha" as N2
+(Sacar dinero\n+ Solicitud hecha) <.. N2
+N2 .. (Retener tarjeta) : <<Extend>>
+
+@enduml
+
